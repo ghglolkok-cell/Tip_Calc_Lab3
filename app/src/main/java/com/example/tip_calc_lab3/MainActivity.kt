@@ -117,6 +117,7 @@ fun DemoScreen(modifier: Modifier = Modifier) {
             onPositionChange = handlePositionChange
         )
 
+
         Text(
             style = MaterialTheme.typography.headlineMedium,
             text = "${sliderPosition.toInt()}%"
