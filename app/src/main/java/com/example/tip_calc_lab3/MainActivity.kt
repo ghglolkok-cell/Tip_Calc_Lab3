@@ -104,6 +104,25 @@ fun DemoScreen(modifier: Modifier = Modifier) {
                 modifier = Modifier.width(150.dp)
             )
         }
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        // Количество блюд
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier.align(Alignment.Start)
+        ) {
+            Text(
+                text = "Количество блюд:",
+                fontSize = 22.sp,
+                modifier = Modifier.width(150.dp)
+            )
+            TextField(
+                value = dishCount,
+                onValueChange = { dishCount = it },
+                modifier = Modifier.width(150.dp)
+            )
+        }
     }
 }
 
